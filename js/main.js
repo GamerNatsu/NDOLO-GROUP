@@ -1,3 +1,11 @@
+$(document).ready(function() {
+    setInterval(function() {
+        $(".owl-next").click();
+    }, 3000);
+});
+
+
+
 (function ($) {
     "use strict";
 
@@ -206,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Array of different image sources
     // Using placeholder images with different dimensions to simulate different images
     const images = [
-        { src: "./img/17.jpg", caption: "Image 1" },
+        { src: "./img/46.jpp", caption: "Image 1" },
         { src: "./img/18.jpg", caption: "Image 2" },
         { src: "./img/19.jpg", caption: "Image 3" },
         { src: "./img/20.jpg", caption: "Image 4" },

@@ -995,4 +995,87 @@ h1 {
 .special-label:hover {
     background: rgba(0, 0, 0, 0.7); /* Assombrit le fond au survol */
     transform: translate(-50%, -50%) scale(1.1); /* Effet d'agrandissement */
-}
+} 
+
+        :root {
+            /* Couleurs personnalisées */
+            --chat--color-primary: #6D071A;
+            --chat--color-primary-shade-50: #5d0616;
+            --chat--color-primary-shade-100: #4d0512;
+            --chat--color-secondary: #FFD700;
+            --chat--color-secondary-shade-50: #e6c200;
+            --chat--color-white: #ffffff;
+            --chat--color-light: #F9F5E9;
+            --chat--color-light-shade-50: #f0e9d8;
+            --chat--color-light-shade-100: #e5dbc6;
+            --chat--color-medium: #d2d4d9;
+            --chat--color-dark: #101330;
+            --chat--color-disabled: #777980;
+            --chat--color-typing: #404040;
+
+            /* Dimensions de fenêtre */
+            --chat--window--width: 400px;
+            --chat--window--height: 600px;
+            --chat--window--border: 1px solid var(--chat--color-light-shade-50);
+
+            /* Styles du header - taille réduite */
+            --chat--header-height: auto;
+            --chat--header--padding: 0.6rem;
+            --chat--header--background: var(--chat--color-primary);
+            --chat--header--color: var(--chat--color-white);
+            --chat--heading--font-size: 1.5em;
+            --chat--subtitle--font-size: 0.85em;
+            --chat--subtitle--line-height: 1.4;
+
+            /* Styles des messages */
+            --chat--message--bot--background: var(--chat--color-white);
+            --chat--message--bot--color: var(--chat--color-dark);
+            --chat--message--user--background: var(--chat--color-secondary);
+            --chat--message--user--color: #000000;
+
+            /* Corps et arrière-plan */
+            --chat--body--background: var(--chat--color-light);
+            --chat--footer--background: var(--chat--color-light);
+
+            /* Bouton de chat */
+            --chat--toggle--background: var(--chat--color-primary);
+            --chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+            --chat--toggle--active--background: var(--chat--color-primary-shade-100);
+
+            /* Boutons d'envoi et de fichier */
+            --chat--button--background: var(--chat--color-primary);
+            --chat--button--hover--background: var(--chat--color-primary-shade-50);
+            }
+
+            /* Ajustement de la largeur maximale des messages */
+            .chat-message {
+            max-width: 65%;
+            }
+
+            /* Réduction de la hauteur du header */
+            .chat-header {
+                height: 60px!important;
+                min-height: unset;
+            }
+
+            /* Style pour l'icône du bouton de chat */
+            .chat-toggle-icon {
+            filter: brightness(1.2);
+            }
+            .chat-heading h1 {
+            color: transparent; /* Rend le texte invisible */
+            position: relative; /* Nécessaire pour positionner le texte ajouté */
+            }
+
+            .chat-heading h1 {
+            margin-top: 80px!important; /* Ajuste la position */
+            margin-left: 465px;
+            }
+            .chat-window-wrapper{
+                margin-right:100px!important;
+                margin-bottom:20px!important;
+            }
+            .chat-window {
+                width: 100%!important;
+                height: 100%!important;
+            }

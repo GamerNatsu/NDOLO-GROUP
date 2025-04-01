@@ -30,6 +30,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- chat bot-->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -334,7 +337,7 @@
             <!-- Service 6: Marketing -->
             <div class="service-card" style="--card-index: 6;">
                 <div class="service-image">
-                    <img src="/api/placeholder/400/320" alt="Marketing Service">
+                    <img src="img/Marketing.png" alt="Marketing Service">
                     <div class="service-badge">Strategic</div>
                 </div>
                 <div class="service-content">
@@ -725,6 +728,14 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            webhookUrl : 'https://eloundoudiane.app.n8n.cloud/webhook/f2f0e0cd-25e6-4f1b-b826-768bc35b9bf2/chat'
+        });
+        document.querySelector(".chat-heading h1").textContent = "Assistance 24h/7j";
+   </script>
 </body>
 
 </html>
