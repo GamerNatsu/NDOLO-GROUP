@@ -355,3 +355,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check on scroll
     window.addEventListener('scroll', checkScroll);
 });
+//Google Translate Script
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en', // default language of your page
+      includedLanguages: 'en,fr,es,de,it,ar,zh-CN', // choose languages to offer
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+ 

@@ -823,6 +823,7 @@ h1::after {
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
+    
 }
 
 .footer .btn.btn-link::before {
@@ -1079,3 +1080,8 @@ h1 {
                 width: 100%!important;
                 height: 100%!important;
             }
+            /*Google Translate*/
+            .language-selector-footer {
+                text-align: center;
+                margin-top: 20px;
+              }
